@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarat G</title>
+  <meta name="description" content="Personal site of Sarat G.">
+  <style>
+    :root { --bg:#fafaf7; --fg:#1d1d1b; --muted:#6b6b66; --accent:#2f5d8a; --line:#e4e2dc; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#141413; --fg:#ecebe6; --muted:#9a9890; --accent:#7fb0e0; --line:#2a2a27; }
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg);
+      font:17px/1.65 Georgia, "Iowan Old Style", serif; }
+    main { max-width:680px; margin:0 auto; padding:72px 20px 48px; }
+    h1 { font-size:2.4rem; margin:0 0 4px; letter-spacing:-0.01em; }
+    .tag { color:var(--muted); margin:0 0 40px; font-family:system-ui, sans-serif; font-size:0.95rem; }
+    h2 { font-size:1.05rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted);
+      font-family:system-ui, sans-serif; font-weight:600; margin:48px 0 12px;
+      border-top:1px solid var(--line); padding-top:24px; }
+    a { color:var(--accent); text-decoration-thickness:1px; text-underline-offset:3px; }
+    ul { padding-left:1.2em; }
+    li { margin:6px 0; }
+    footer { margin-top:64px; color:var(--muted); font-size:0.85rem; font-family:system-ui, sans-serif; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Sarat G</h1>
+    <p class="tag">Security engineering · cryptography · hardware security modules</p>
+
+    <p>Hi, I'm Sarat. I work on security systems and write about how hardware
+    security modules protect keys in practice. This is my small corner of the web.</p>
+
+    <h2>Writing</h2>
+    <ul>
+      <li><strong>The HSM Book</strong> — a long-form guide to hardware security modules,
+        key management and their threat models. <em>(Coming soon.)</em></li>
+    </ul>
+
+    <h2>Elsewhere</h2>
+    <ul>
+      <li><a href="https://github.com/sg777">GitHub</a></li>
+    </ul>
+
+    <footer>© <span id="y">2026</span> Sarat G · saratg.com</footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
